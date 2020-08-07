@@ -1,0 +1,337 @@
+html,
+body {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: #707070;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .initiate{
+  &:before {
+    width: calc(50% - 297px);
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    content: "";
+    display: block;
+    height: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+  .row {
+    margin: 0;
+    height: 100%;
+
+    
+
+    .wrapper {
+      margin: 0 auto;
+      width: 1403px;
+    }
+
+    .col-sm-4 {
+      padding: 0;
+      // background-color: #ffffff;
+      flex: 0 0 34.5%;
+      max-width: 29.41%;
+      height: 100%;
+      position: fixed;
+
+      .sidebar {
+        width: 412px;
+
+        .site-header {
+          margin: 20% 0;
+          padding: 0 20%;
+        }
+      }
+
+      .site-header h1 {
+        font-size: 27px;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 700;
+      }
+
+      .site-header p {
+        font-family: "Noto Sans", sans-serif;
+        color: #8f8f8f;
+        font-size: 16px;
+      }
+
+      .main-list {
+        margin: 20% 0;
+        padding: 0 20%;
+
+        ul {
+          border-top: 1px solid rgba(51, 51, 51, 0.1);
+
+          li {
+            border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+            padding: 0.5em 0;
+            font-family: Times, serif;
+
+          }
+        }
+      }
+
+      .input-group {
+        margin: 20% 0;
+        padding: 0 20%;
+
+        input {
+          border-radius: 0;
+          background-color: #f7f7f7;
+        }
+
+      }
+
+    }
+
+    .col-sm-8 {
+      padding: 0;
+      flex: 0 0 65.5%;
+      max-width: 68.65%;
+      font-size: 11px;
+      float: right;
+
+      .content {
+        padding: 8.3333% 9.5% 0 5%;
+
+        .main {
+          background-color: #ffffff;
+          padding: 10%;
+          border: 1px solid #ebebeb;
+
+          h2 {
+            font-size: 2.4rem;
+            font-family: "Noto Serif", serif;
+            font-weight: 700;
+            margin-bottom: 1.2308em;
+
+            a:hover {
+              text-decoration: none;
+            }
+          }
+
+          .main-content {
+            margin-bottom: 1.6842em;
+            font-size: 18.5px;
+            font-family: "Noto Serif", serif;
+          }
+
+          .more-link {
+            font-size: 1.2rem;
+            font-family: "Noto Serif", serif;
+
+            border-bottom: 1px solid #333333;
+            line-height: 1.6842;
+
+            &:hover {
+              border-bottom: 0;
+            }
+          }
+
+        }
+
+        .main-footer {
+          background-color: #f7f7f7;
+          border: 1px solid #ebebeb;
+          border-top: 0;
+
+          padding: 5% 10%;
+
+          a {
+            font-size: 1rem;
+            font-family: "Genericons";
+            color: rgba(51, 51, 51, 0.7)
+          }
+
+          a:hover {
+            border-bottom: 1px solid #333333;
+            color: #333333;
+          }
+
+          .foot-left {
+            padding-right: 13px;
+          }
+
+          .iconfont {
+            padding-right: 5px;
+            font-size: 12px;
+          }
+        }
+      }
+
+
+      .pagination {
+        padding: 8.3333% 9.5% 0 5%;
+
+        .nav-links {
+          border: 1px solid #ebebeb;
+          background-color: #fff;
+          width: 100%;
+          text-align: center;
+          line-height: 3.3684em;
+          font-size: 18px;
+          position: relative;
+
+          a {
+            padding: 0 0.8421em;
+          }
+
+          .pagination-last {
+            right: 0;
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            width: 64px;
+            height: 100%;
+            line-height: 60.5px;
+
+            .iconfont {
+              font-size: 25px;
+            }
+
+            &:hover {
+              background-color: #707070;
+            }
+          }
+        }
+      }
+
+      .footer {
+        padding: 8.333% 9.5% 0 5%;
+
+        .footer-main {
+          border: 1px solid #ebebeb;
+          background-color: #fff;
+          width: 100%;
+          padding: 5% 10%;
+          font-size: 1rem;
+          font-family: "Noto Serif", serif;
+
+          a {
+            color: #707070;
+
+            &:hover {
+              color: #333;
+              border-bottom: 1px solid #333333;
+            }
+          }
+
+          span{
+            float: right;
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  // 注册页面
+  .signup{
+
+    .signup-form{
+      background-color: #ffffff;
+    width: 460px;
+    left: 50%;
+    margin-left: -230px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+    padding: 5% 5%;
+    position: fixed;
+    top: 15%;
+
+    img{
+      position: absolute;
+    top: -60px;
+    left: 101px;
+    width: 258px;
+    height: 120px;
+    }
+    .form-group input{
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      border-radius: 0;
+      padding: 0;
+    }
+    .form-check .form-check-label{
+      color: #6c757d;
+    }
+    }
+    button{
+      width: 100%;
+      height: 47px;
+    }
+  }
+
+  .ment {
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    background-color: black;
+    color: #ffffff;
+    font-size: 13px;
+
+    .left {
+      text-align: center;
+      height: 2rem;
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+
+    .right {
+      text-align: right;
+      height: 2rem;
+
+       img{
+           width: 20px;
+           height: 20px;
+           right: 87px;
+           top: 6px;
+           position: absolute;
+            border-radius:50%
+       }
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+    }
+
+  }
+}

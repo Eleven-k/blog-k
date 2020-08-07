@@ -1,0 +1,163 @@
+html,
+body {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .container .ment {
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    background-color: black;
+    color: #ffffff;
+    font-size: 13px;
+  }
+
+  .container .ment .left {
+    text-align: center;
+    height: 2rem;
+  }
+
+  .container .ment .left a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .container .ment .right {
+    text-align: right;
+    height: 2rem;
+  }
+
+  .container .ment .right img {
+    width: 20px;
+    height: 20px;
+    right: 87px;
+    top: 6px;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .container .ment .right a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .container .contengs {
+    height: 100%;
+    padding-top: 2rem;
+  }
+
+  .container .contengs .col-1 {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: #23282d;
+    position: fixed;
+  }
+
+  .container .contengs .col-1 .input-group {
+    background-color: #191e23;
+    padding-top: 0.5rem;
+  }
+
+  .container .contengs .col-1 .input-group input {
+    margin: 1rem;
+    height: 2rem;
+    border-radius: 0;
+  }
+
+  .container .contengs .col-1 a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .container .contengs .col-1 .rev {
+    height: 100%;
+    background-color: #191e23;
+  }
+
+  .container .contengs .col-1 .rev li {
+    padding-left: 1rem;
+    font-size: 14px;
+    height: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .container .contengs .col-1 .rev li:hover {
+    background-color: black;
+  }
+
+  .container .contengs .col-1 .rev li a:hover {
+    color: #007cba;
+  }
+
+  .container .contengs .col-1 .rev form {
+    margin: 1rem;
+  }
+
+  .container .contengs .content {
+    width: 100%;
+    padding-left: 8.3333%;
+  }
+
+  .container .contengs .content .bd-example {
+    margin: 3rem;
+    border: 1px solid #ccd0d4;
+    border-bottom: 0;
+  }
+
+  .container .contengs .content .bd-example .table {
+    margin-bottom: 0;
+  }
+
+  .container .contengs .content .bd-example .table thead .delete {
+    text-align: center;
+  }
+
+  .container .contengs .content .bd-example .table tbody tr {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .container .contengs .content .bd-example .table tbody tr .button {
+    text-align: center;
+  }
+
+  .container .contengs .content .bd-example .table tbody tr .button a {
+    padding-left: 0.8rem;
+  }
+
+  .container .contengs .content .bd-example .table tbody tr .button span {
+    top: -0.09rem;
+    position: relative;
+  }
+
+  .container .contengs .content .bd-example .article-title {
+    padding-bottom: 0.7rem;
+  }
+
+  .container .contengs .content .bd-example .form-update .form-before {
+    margin: 1rem 0;
+  }
+
+  .container .contengs .content .bd-example .form-but {
+    padding-top: 1rem;
+  }
+}
+
