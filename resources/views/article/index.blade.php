@@ -6,7 +6,7 @@
   @if (isset($feed_items))
   <ul class="list-unstyled">
     @foreach ($feed_items as $article)
-    @include('article._article', ['user' => $article->user])
+    @include('article._article', ['user' => $article->user_id])
     @endforeach
   </ul>
   @else

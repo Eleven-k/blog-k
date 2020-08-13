@@ -9,6 +9,6 @@
     </div>
     <div class="main-footer">
         <span class="foot-left"><a href="#"><span class="iconfont icon-rili1"></span>{{ $article->created_at->diffForHumans() }}</a></span>
-        <span class="foot-right"><a href="#"><span class="iconfont icon-wenjianjia"></span>{{ $user->name }}</a></span>
+        <span class="foot-right"><a href="#"><span class="iconfont icon-wenjianjia"></span>{{ $article->user_id }}</a></span>
     </div>
 </div>

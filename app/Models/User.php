@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Models\Article;
 
 class User extends Authenticatable
 {
@@ -45,6 +46,6 @@ class User extends Authenticatable
     public function feed()
     {
         return $this->articles()
-                    ->orderBy('created_at', 'desc');
+            ->orderBy('created_at', 'desc');
     }
 }
