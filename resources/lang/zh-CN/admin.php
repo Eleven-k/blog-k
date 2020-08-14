@@ -208,7 +208,8 @@ return [
     'menu_titles' => [
         'index'         => '主页',
         'admin'         => '系统',
-        'users'         => '管理员',
+        'user_management'=>'用户管理',
+        'users'         => '用户',
         'roles'         => '角色',
         'permission'    => '权限',
         'menu'          => '菜单',

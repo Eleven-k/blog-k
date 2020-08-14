@@ -15,7 +15,7 @@ class SessionsController extends Controller
         ]);
 
         $this->middleware('guest', [
-            'only' => ['login']
+            'only' => ['create']
         ]);
     }
 
@@ -25,16 +25,9 @@ class SessionsController extends Controller
         return view('sessions.login');
     }
 
-    public function admin(User $user)
-    {
-        $articles = $user->articles()
-            ->orderBy('created_at', 'desc')
-            ->paginate(10);
-        return view('admin.index', compact('user', 'articles'));
-    }
 
     // 用户登录
-    public function store(Request $request)
+    public function store(Request $request, User $user)
     {
         $credentials = $this->validate($request, [
             'email' => 'required|email|max:255',
@@ -42,7 +35,7 @@ class SessionsController extends Controller
         ]);
         if (Auth::attempt($credentials)) {
             session()->flash('success', '欢迎回来！');
-            return redirect()->route('admin', [Auth::user()]);
+            return redirect()->route('users.show', [Auth::user()]);
         } else {
             session()->flash('danger', '很抱歉，您的邮箱和密码不匹配');
             return redirect()->back()->withInput();

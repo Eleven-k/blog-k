@@ -1,3 +1,6 @@
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
 html,
 body {
   background-color: #f1f1f1;
@@ -14,10 +17,19 @@ a {
   }
 }
 
+a:visited{
+  color: #333333;
+}
+
 ul {
   list-style: none;
   padding: 0;
 }
+
+img{
+  max-width: 100%;
+}
+
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {}
