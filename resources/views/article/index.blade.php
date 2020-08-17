@@ -16,9 +16,8 @@
 
   <div class="footer">
     <div class="footer-main">
-      <a href="#">自豪地采用WordPress</a>
+      <a href="#">十一的个人博客</a>
       <span><a href="{{ route('login') }}">登录</a></span>
-      <!-- <span><a href="{{ route('users.create') }}">注册</a></span> -->
     </div>
   </div>
 </div>

@@ -9,11 +9,9 @@
             <div class="card ">
                 <div class="card-header">
                     <h1>
-                        @if($article->id)
-                        编辑文章
-                        @else
+                        
                         新建文章
-                        @endif
+                     
                     </h1>
                 </div>
                 <div class="card-body">
@@ -22,7 +20,7 @@
                         @include('shared._errors')
                         {{ csrf_field() }}
                         <div class="form-group">
-                            <input class="form-control" type="text" name="title" value="" placeholder="请填写标题" value="{{ old('title') }}" required />
+                            <input class="form-control" type="text" name="title" value="{{ old('title') }}" placeholder="请填写标题" required />
                         </div>
 
                         <div class="form-group">

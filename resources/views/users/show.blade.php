@@ -23,6 +23,17 @@
                                 <a href="{{ route('show', $article->id) }}">
                                     {{ $article->title }}
                                 </a>
+                                <span>
+                                <form action="{{ route('articles.destroy', $article->id) }}" method="POST" onsubmit="return confirm('您确定要删除本条微博吗？');">
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
+                                    <a href="{{route('articles.edit',$article->id)}}" style="font-size: 14px;top: 11px;/* padding-top: 41px; */position: absolute;right: 44px;">编辑</a>
+                                    <span>
+                                        <button type="submit" class="btn btn-link" style="color: red;font-size:13px;position: absolute;top: 5px;right: -5px;">删除</button>
+                                    </span>
+                                    <!-- <button type="submit" class="btn btn-sm btn-danger">删除</button> -->
+                                </form>
+                                </span>
                                 <span class="meta float-right text-secondary">
                                     {{ $article->created_at->diffForHumans() }}
                                 </span>
@@ -36,7 +47,7 @@
 
                         {{-- 分页 --}}
                         <div class="mt-4 pt-1">
-                        {!! $articles->render() !!}
+                            {!! $articles->render() !!}
                         </div>
                     </div>
                 </div>

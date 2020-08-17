@@ -19,8 +19,6 @@ Route::get('/article/{article}','ArticlesController@show')->name('show');
 
 
 // 注册用户页面及方法
-Route::get('/users/create', 'UsersController@create')->name('users.create');
-Route::post('/users', 'UsersController@store')->name('users.store');
 Route::get('/users/{user}', 'UsersController@show')->name('users.show');
 Route::get('/users/{user}/edit', 'UsersController@edit')->name('users.edit');
 Route::patch('/users/{user}', 'UsersController@update')->name('users.update');
@@ -34,5 +32,10 @@ Route::delete('logout', 'SessionsController@destroy')->name('logout');
 // 发布文章页面及方法
 Route::get('/articles/create', 'ArticlesController@create')->name('articles.create');
 Route::post('/articles', 'ArticlesController@store')->name('articles.store');
+// 后台修改编辑文章页面及方法
+Route::get('/articles/{article}/edit', 'ArticlesController@edit')->name('articles.edit');
+Route::patch('/articles/{article}', 'ArticlesController@update')->name('articles.update');
+// 后台删除文章方法
+Route::delete('/articles/{article}', 'ArticlesController@destroy')->name('articles.destroy');
 
 Route::post('upload_image', 'ArticlesController@uploadImage')->name('articles.upload_image');

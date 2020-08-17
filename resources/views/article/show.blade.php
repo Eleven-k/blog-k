@@ -21,7 +21,7 @@
 
     <div class="footer">
         <div class="footer-main">
-            <a href="#">自豪地采用WordPress</a>
+            <a href="#">十一的个人博客</a>
         </div>
     </div>
 </div>

@@ -3,9 +3,6 @@
         <div class="main-header">
             <h2 class="entry-title"><a href="{{route('show',$article->id)}}" rel="bookmark">{{ $article->title }}</a></h2>
         </div>
-        <div class="main-content">
-            <p>{!! $article->content !!}</p>
-        </div>
     </div>
     <div class="main-footer">
         <span class="foot-left"><a href="#"><span class="iconfont icon-rili1"></span>{{ $article->created_at->diffForHumans() }}</a></span>
